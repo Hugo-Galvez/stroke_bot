@@ -1,0 +1,8 @@
+Esta herramienta está diseñada para profesionales de la salud. Permite ingresar información clínica del paciente y generar predicciones sobre el riesgo de ictus, junto con explicaciones visuales mediante gráficos de SHAP.
+
+### Cómo usar:
+- **Proporcione información médica del paciente** en lenguaje natural, como:
+  - *"Paciente de 45 años, glucosa promedio de 120, BMI de 25, hipertensión: sí, enfermedad cardíaca: no".*
+- El asistente analizará los datos, calculará el riesgo de ictus y ofrecerá explicaciones claras.
+
+> **Nota:** Esta aplicación no sustituye la evaluación médica y debe ser utilizada como apoyo en la toma de decisiones.

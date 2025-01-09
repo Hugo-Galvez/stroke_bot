@@ -1,0 +1,12 @@
+| **Variable**                 | **Valores esperados**                                  | **Descripción**                                      |
+|------------------------------|-------------------------------------------------------|-----------------------------------------------------|
+| **Género** (`gender`)        | Hombre, Mujer                                         | Género del paciente.                                |
+| **Edad** (`age`)             | Cualquier valor positivo (e.g., 30.0)                 | Edad del paciente en años.                         |
+| **Hipertensión** (`hypertension`) | Sí, No                                                | Si el paciente tiene hipertensión.                 |
+| **Enfermedad cardíaca** (`heart_disease`) | Sí, No                                           | Si el paciente tiene enfermedad cardíaca.          |
+| **Casado/a** (`ever_married`) | Sí, No                                                | Si el paciente alguna vez estuvo casado.           |
+| **Tipo de empleo** (`work_type`) | Privado, Autónomo, Funcionario, Niño, Nunca ha trabajado | Tipo de empleo del paciente.                       |
+| **Residencia** (`Residence_type`) | Urbana, Rural                                       | Tipo de residencia del paciente.                   |
+| **Glucosa promedio** (`avg_glucose_level`) | Cualquier valor positivo (e.g., 101.0)            | Nivel promedio de glucosa en sangre.               |
+| **Índice de masa corporal** (`bmi`) | Cualquier valor positivo (e.g., 25.7)             | Índice de masa corporal (BMI).                     |
+| **Historial de tabaquismo** (`smoking_status`) | Nunca fumó, Exfumador, Fumador, Desconocido   | Historial de tabaquismo.                           |
