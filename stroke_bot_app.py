@@ -21,7 +21,7 @@ USER_AVATAR = "👩‍⚕️"
 BOT_AVATAR = "🧠"
 
 load_dotenv()
-client = OpenAI(api_key=st.secrets["API_KEY")
+client = OpenAI(api_key=st.secrets["API_KEY"])
 LLM_MODEL = "gpt-4o-mini-2024-07-18"
 
 
