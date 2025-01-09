@@ -11,6 +11,8 @@ from tools_config import tools
 # Definición de herramientas para GPT
 tools = tools
 
+
+
 # Configuración de la página y variables iniciales
 st.set_page_config(page_title="Stroke Bot", layout="wide")
 st.title("🩺 Asistente Médico para Predicción de Ictus")
@@ -19,7 +21,7 @@ USER_AVATAR = "👩‍⚕️"
 BOT_AVATAR = "🧠"
 
 load_dotenv()
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(api_key=st.secrets["API_KEY")
 LLM_MODEL = "gpt-4o-mini-2024-07-18"
 
 
