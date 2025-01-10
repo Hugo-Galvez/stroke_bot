@@ -22,16 +22,6 @@ client = OpenAI(api_key=st.secrets["API_KEY"])
 LLM_MODEL = "gpt-4o-mini-2024-07-18"
 
 
-def load_chat_history():
-    with shelve.open("chat_history") as db:
-        return db.get("messages", [])
-
-
-def save_chat_history(messages):
-    with shelve.open("chat_history") as db:
-        db["messages"] = messages
-
-
 def load_text(file_path):
     with open(file_path, "r", encoding="utf-8") as file:
         return file.read()
@@ -55,8 +45,6 @@ system_message = {
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
-else:
-    st.session_state.messages = load_chat_history()
 
 col1, col2 = st.columns([1.5, 2])
 
@@ -68,12 +56,6 @@ with col1:
 
 with col2:
     st.subheader("💬 Interacción con Stroke Bot")
-
-    with st.sidebar:
-        if st.button("Borrar historial de chat"):
-            st.session_state.messages = []
-            save_chat_history(st.session_state.messages)
-            st.success("Historial de chat borrado")
 
     # Renderizar mensajes del usuario y del asistente
     for message in st.session_state.messages:
@@ -235,6 +217,3 @@ with col2:
             {"role": "assistant", "content": assistant_reply})
         with st.chat_message("assistant", avatar=BOT_AVATAR):
             st.markdown(assistant_reply)
-
-        # Guardamos el historial
-        save_chat_history(st.session_state.messages)
