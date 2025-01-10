@@ -2,6 +2,8 @@ import joblib
 import numpy as np
 import pandas as pd
 import shap
+import matplotlib
+matplotlib.use('Agg')  # Backend para entornos sin interfaz gráfica
 import matplotlib.pyplot as plt
 import os
 from tensorflow.keras.models import load_model
@@ -26,9 +28,6 @@ CATEGORICAL_FEATURES = [
     "work_type", "Residence_type", "smoking_status"
 ]
 NUMERICAL_FEATURES = ["age", "avg_glucose_level", "bmi"]
-
-# Configuración de SHAP
-shap.initjs()
 
 
 def get_reverted_shap_explanation(person_data):
