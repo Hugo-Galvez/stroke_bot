@@ -13,7 +13,7 @@ tools = tools
 
 # Configuración de la página y variables iniciales
 st.set_page_config(page_title="Stroke Bot", layout="wide")
-st.title("🩺 Asistente Médico para Predicción de Ictus")
+st.title("🩺 Stroke Bot: un asistente médico para predicción de ictus")
 
 USER_AVATAR = "👩‍⚕️"
 BOT_AVATAR = "🧠"
