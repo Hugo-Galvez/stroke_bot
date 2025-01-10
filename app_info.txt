@@ -1,8 +1,14 @@
-Esta herramienta está diseñada para profesionales de la salud. Permite ingresar información clínica del paciente y generar predicciones sobre el riesgo de ictus, junto con explicaciones visuales mediante gráficos de SHAP.
+Esta herramienta está diseñada para profesionales de la salud. Permite ingresar información clínica del paciente para generar predicciones sobre el riesgo de ictus, acompañadas de explicaciones visuales mediante gráficos de SHAP.
 
 ### Cómo usar:
-- **Proporcione información médica del paciente** en lenguaje natural, como:
-  - *"Paciente de 45 años, glucosa promedio de 120, BMI de 25, hipertensión: sí, enfermedad cardíaca: no".*
-- El asistente analizará los datos, calculará el riesgo de ictus y ofrecerá explicaciones claras.
+1. **Ingrese información médica del paciente** en lenguaje natural, por ejemplo:
+   - *"Paciente de 45 años, glucosa promedio de 120, BMI de 25, hipertensión: sí, enfermedad cardíaca: no".*
+2. El asistente analizará los datos, calculará el riesgo de ictus y ofrecerá explicaciones claras y detalladas.
 
-> **Nota:** Esta aplicación no sustituye la evaluación médica y debe ser utilizada como apoyo en la toma de decisiones.
+> **Importante:**
+> - Esta aplicación **no sustituye** la evaluación médica y debe utilizarse únicamente como herramienta de apoyo en la toma de decisiones clínicas.
+> - Forma parte del Trabajo Final del Máster en Bioinformática y Bioestadística de la **Universitat Oberta de Catalunya**.
+> - La herramienta utiliza un modelo preentrenado de Red Neuronal Artificial (ANN) para calcular la probabilidad de ictus, entrenado con datos del [Stroke Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset/data?select=healthcare-dataset-stroke-data.csv).
+> - GPT está integrado para interpretar los datos proporcionados por el personal médico, realizar las predicciones con la ANN y generar explicaciones mediante funciones de SHAP.
+
+Para su funcionamiento, actualmente se deben proporcionar todas las variables con las que el modelo de ANN fue entrenado, se listan a continuación.
