@@ -1,4 +1,4 @@
-Esta herramienta está diseñada para profesionales de la salud. Permite ingresar información clínica del paciente para generar predicciones sobre el riesgo de ictus, acompañadas de explicaciones visuales mediante gráficos de SHAP.
+Esta herramienta es un prototipo diseñado para profesionales de la salud. Podría ayudar a los clínicos a tomar decisiones informadas combinando la precisión predictiva con la transparencia. Stroke bot permite ingresar información clínica del paciente para generar predicciones sobre el riesgo de ictus, acompañadas de explicaciones visuales mediante gráficos de SHAP.
 
 ### Cómo usar:
 1. **Ingrese información médica del paciente** en lenguaje natural, por ejemplo:
@@ -6,9 +6,10 @@ Esta herramienta está diseñada para profesionales de la salud. Permite ingresa
 2. El asistente analizará los datos, calculará el riesgo de ictus y ofrecerá explicaciones claras y detalladas.
 
 > **Importante:**
-> - Esta aplicación **no sustituye** la evaluación médica y debe utilizarse únicamente como herramienta de apoyo en la toma de decisiones clínicas.
-> - Forma parte del Trabajo Final del Máster en Bioinformática y Bioestadística de la **Universitat Oberta de Catalunya**.
+> - Esta aplicación **no sustituye** la evaluación médica y NO debe utilizarse como herramienta de apoyo en la toma de decisiones clínicas.
+> - Forma parte del Trabajo *Stroke Decision Support System with Explainable AI: Leveraging Neural Networks, SHAP Values and GPT Models*, proyecto final del Máster en Bioinformática y Bioestadística de la **Universitat Oberta de Catalunya** (14/01/2025).
 > - La herramienta utiliza un modelo preentrenado de Red Neuronal Artificial (ANN) para calcular la probabilidad de ictus, entrenado con datos del [Stroke Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset/data?select=healthcare-dataset-stroke-data.csv).
 > - GPT está integrado para interpretar los datos proporcionados por el personal médico, realizar las predicciones con la ANN y generar explicaciones mediante funciones de SHAP.
+> - Stroke Bot debe considerarse un prototipo para pruebas y exploración conceptual.
 
 Para su funcionamiento, actualmente se deben proporcionar todas las variables con las que el modelo de ANN fue entrenado, se listan a continuación.
