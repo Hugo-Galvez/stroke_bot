@@ -5,6 +5,8 @@ Esta herramienta es un prototipo diseñado para profesionales de la salud. Podr�
    - *"Paciente de 45 años, glucosa promedio de 120, BMI de 25, hipertensión: sí, enfermedad cardíaca: no".*
 2. El asistente analizará los datos, calculará el riesgo de ictus y ofrecerá explicaciones claras y detalladas.
 
+- Pruebe con esta prompt: "*Dime la probabilidad de ictus, tengo una mujer mayor de 90 años, con glucosa de 120, sin hipertensión, pero fuma, con antecedentes de enfermedad cardíaca y un bmi de 39, viuda, jubilada pero trabajó de funcionaria, vive en el campo*".
+
 > **Importante:**
 > - Esta aplicación **no sustituye** la evaluación médica y NO debe utilizarse como herramienta de apoyo en la toma de decisiones clínicas.
 > - Forma parte del Trabajo *Stroke Decision Support System with Explainable AI: Leveraging Neural Networks, SHAP Values and GPT Models*, proyecto final del Máster en Bioinformática y Bioestadística de la **Universitat Oberta de Catalunya** (14/01/2025).
