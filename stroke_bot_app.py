@@ -19,7 +19,7 @@ USER_AVATAR = "👩‍⚕️"
 BOT_AVATAR = "🧠"
 
 client = OpenAI(api_key=st.secrets["API_KEY"])
-LLM_MODEL = "o3-mini-2025-01-31"
+LLM_MODEL = "gpt-4o-mini-2024-07-18"
 
 
 def load_text(file_path):
